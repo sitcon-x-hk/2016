@@ -1,0 +1,1 @@
+!function(t){t(document.getElementById("back-to-top")).find("button").click(function(){t("html, body").animate({scrollTop:0})})}(jQuery);
