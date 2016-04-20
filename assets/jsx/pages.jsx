@@ -101,6 +101,23 @@ class CodeOfConduct extends Component {
 	}
 }
 
+class NotFound extends Component {
+	render() {
+		return (
+			<div>
+				<h1 className="center brand-red">
+					Not Found
+				</h1>
+
+				<p>
+					The page you are looking for is not found.
+					You may go back to the <Link to="/">Home</Link> page.
+				</p>
+			</div>
+		)
+	}
+}
+
 class Engine extends Component {
 	render() {
 		const Router = ReactRouter.Router;
@@ -114,6 +131,8 @@ class Engine extends Component {
 					<Route path="/cfs" component={ CallForStaff }/>
 					<Route path="/about" component={ Introduction } />
 					<Route path="/coc" component={ CodeOfConduct } />
+
+					<Route path="*" component={ NotFound } />
 				</Route>
 			</Router>
 		);

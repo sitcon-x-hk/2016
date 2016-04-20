@@ -42,7 +42,6 @@ const Nav = React.createClass({
 			<div className={ classes }>
 				<div className="layout-row">
 					<Link to="/about" activeClassName="active">About</Link>
-					<Link to="/event" activeClassName="active">Event</Link>
 					<Link to="/sponsor" activeClassName="active">Sponsor</Link>
 				</div>
 				<div className="nav-button">

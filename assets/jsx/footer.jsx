@@ -12,7 +12,7 @@ const BackToTop = React.createClass({
 		);
 	},
 	buttonClick: function () {
-		window.scrollTo(0, 0);
+		$("html, body").animate({ scrollTop: 0 }, "slow");
 	}
 });
 

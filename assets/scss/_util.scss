@@ -85,3 +85,12 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 .brand-green {
   color: $theme-green;
 }
+
+a {
+  text-decoration: none;
+  color: $theme-green;
+
+  &:hover {
+    font-weight: bold;
+  }
+}
