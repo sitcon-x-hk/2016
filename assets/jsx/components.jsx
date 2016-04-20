@@ -54,7 +54,7 @@ const FontAwesome = React.createClass({
 		return (
 			<span
 				{ ...this.props}
-				className={ classes}
+				className={ classes }
 			/>
 		);
 	}
@@ -62,3 +62,57 @@ const FontAwesome = React.createClass({
 
 const Link = ReactRouter.Link;
 const Component = React.Component;
+
+class Center extends Component {
+	render(){
+		var classes = classNames(this.props.className, 'center');
+		return (
+			<div className={ classes }>
+				{ this.props.children }
+			</div>
+		);
+	}
+}
+
+class Card extends Component {
+	render() {
+		var classes = classNames(this.props.className, 'md-card md-padding');
+		return (
+			<div className={ classes }>
+				<div className="card-content">
+					{ this.props.children }
+				</div>
+			</div>
+		);
+	}
+}
+
+class Page extends Component {
+	render() {
+		var classes = classNames(this.props.className, 'page');
+		return (
+			<div className={ classes }>
+				<section>
+					<div>
+						<Card>
+							{ this.props.children }
+						</Card>
+					</div>
+				</section>
+			</div>
+		);
+	}
+}
+
+class Wrap extends Component {
+	render() {
+		var classes = classNames('wrap', this.props.className);
+		return (
+			<div className={ classes }>
+				<Page>
+					{ this.props.children }
+				</Page>
+			</div>
+		);
+	}
+}

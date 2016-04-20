@@ -49,14 +49,14 @@ gulp.task('jsx', function () {
 		baseSource + '/jsx/components.jsx',
 		baseSource + '/jsx/*.jsx'
 	])
-		.pipe(sourcemaps.init({loadMaps: true}))
 		.pipe(concat('react.js'))
 		.pipe(react({
 			harmony: true,
 			es6module: true
 		}))
-		.pipe(sourcemaps.write('../../../public/script', {addComment: false}))
-		.pipe(gulp.dest(scriptSource ));
+		.pipe(babel())
+		.pipe(uglify())
+		.pipe(gulp.dest(scriptTarget));
 });
 
 gulp.task('scripts', function () {
