@@ -4,6 +4,9 @@
   "description": "SITCON x HK 2016 Website",
   "repository": "https://github.com/sitcon-x-hk/2016",
   "version": "0.0.1",
+  "scripts": {
+    "run": "node app.js"
+  },
   "dependencies": {
     "express": "^4.13.4",
     "jade": "^1.11.0"
