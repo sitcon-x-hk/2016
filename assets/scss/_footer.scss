@@ -1,14 +1,14 @@
-#footer {
+.footer {
   background-color: $white;
 
   .footer-wrapper {
     padding: 20px;
   }
 
-  #footer-top {
+  .footer-top {
     border-bottom: 1px solid $gray;
 
-    #back-to-top {
+    .back-to-top {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
@@ -26,20 +26,16 @@
       }
     }
 
-    #social-media {
+    .social-media {
       -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
       align-self: flex-end;
       padding: 8px;
       max-width: 100%;
-
-      #facebook {
-
-      }
     }
   }
 
-  #footer-bottom {
+  .footer-bottom {
     padding-top: 10px;
     max-width: 1200px;
     margin-left: auto;
@@ -57,7 +53,7 @@
       justify-content: space-between;
     }
 
-    #about {
+    .about {
       max-width: 100%;
       -webkit-align-items: center;
       -ms-flex-align: center;
@@ -75,7 +71,7 @@
       }
     }
 
-    #contact {
+    .contact {
       max-width: 100%;
       box-sizing: border-box;
 

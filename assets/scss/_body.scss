@@ -1,4 +1,4 @@
-#wrap {
+.wrap {
   background-color: transparent;
   margin-top: -48px;
   position: relative;
@@ -10,7 +10,7 @@
     padding-bottom: 96px;
   }
 
-  #content {
+  .content {
     margin-top: -96px;
     max-width: 960px;
     margin-left: auto;
@@ -34,11 +34,11 @@
     }
   }
 
-  #home {
+  .home {
     margin-bottom: -80px;
-    section#intro {
+    section.intro {
       padding: 40px 0;
-      background-color: $theme-red;
+      background-color: $theme-green;
 
       >div {
         margin-top: -96px;
