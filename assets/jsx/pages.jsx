@@ -46,7 +46,7 @@ class CallForStaff extends Component {
 	render() {
 		return (
 			<div>
-				<h1 className="center">
+				<h1 className="center brand-green">
 					Call For Staff
 				</h1>
 				<div
@@ -57,13 +57,47 @@ class CallForStaff extends Component {
 						'width': '100%',
 						'height': '700px'
 					}}
-				/>
+				></div>
 			</div>
 		);
 	}
 
 	componentDidMount() {
 		(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()
+	}
+}
+
+class Introduction extends Component {
+	render() {
+		return (
+			<div>
+				<h1 className="brand-green">SITCON x HK</h1>
+				<Container>
+					<p>
+						SITCON Student IT Conference,
+						formed by students with passion in IT,
+						a student-centered organisation
+						hope to provide a stage for all Hong Kong students
+						to express and develop their talent with Open Source.
+						The theme of year 2015 is 'Get to know and join the Open Source',
+						hoping to join students in the world of Open Source.
+					</p>
+				</Container>
+			</div>
+		);
+	}
+}
+
+class CodeOfConduct extends Component {
+	render() {
+		return (
+			<div>
+				<h1 className="brand-green">Code of Conduct</h1>
+
+				<Markdown file="coc" />
+
+			</div>
+		);
 	}
 }
 
@@ -78,6 +112,8 @@ class Engine extends Component {
 				<Route path="/" component={App}>
 					<IndexRoute component={ Home } />
 					<Route path="/cfs" component={ CallForStaff }/>
+					<Route path="/about" component={ Introduction } />
+					<Route path="/coc" component={ CodeOfConduct } />
 				</Route>
 			</Router>
 		);

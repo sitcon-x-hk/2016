@@ -27,10 +27,10 @@ const Brand = React.createClass({
 	render: function () {
 		var classes = classNames('brand layout-row header-column', this.props.className);
 		return (
-			<a href="/" className={ classes }>
+			<Link to="/" className={ classes }>
 				<Logo />
 				<Title />
-			</a>
+			</Link>
 		);
 	}
 });

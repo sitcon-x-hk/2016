@@ -37,6 +37,8 @@
     -ms-flex-align: center;
     align-items: center;
 
+    font-family: "Noto Sans", sans-serif;
+
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -64,6 +66,8 @@
 
         font-weight: bold;
         color: $theme-green !important;
+
+        font-family: 'Roboto', "Noto Sans", sans-serif;
       }
     }
   }
@@ -107,6 +111,7 @@
       text-align: center;
       box-sizing: border-box;
       border-radius: 10px;
+      font-weight: 400;
 
       &:hover {
         font-weight: bold;

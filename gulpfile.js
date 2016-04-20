@@ -54,6 +54,7 @@ gulp.task('jsx', function () {
 			harmony: true,
 			es6module: true
 		}))
+		.pipe(sourcemaps.write('.', {addComment: false}))
 		.pipe(babel())
 		.pipe(uglify())
 		.pipe(gulp.dest(scriptTarget));

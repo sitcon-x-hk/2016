@@ -116,3 +116,69 @@ class Wrap extends Component {
 		);
 	}
 }
+
+class Container extends Component {
+	render() {
+		var classes = classNames(this.props.className, 'ts container');
+		return (
+			<div className={ classes }>
+				{ this.props.children }
+			</div>
+		)
+	}
+}
+
+class Segement extends Component {
+	render() {
+		var classes = classNames(this.props.className, 'ts segment');
+		return (
+			<div className={ classes }>
+				{ this.props.children }
+			</div>
+		)
+	}
+}
+
+const Markdown = React.createClass({
+	getInitialState: function() {
+		return {
+			show: false,
+			content: ''
+		};
+	},
+
+	render: function() {
+		var classes = classNames(this.props.className, 'ts dimmer', {
+			active: !this.state.show
+		});
+		return (
+			<div class={ classes }>
+				<div>
+					<span dangerouslySetInnerHTML={ this.markdown() } />
+				</div>
+				<div className="ts text loader">
+					Loading...
+				</div>
+			</div>
+		);
+	},
+
+	componentDidMount: function() {
+		var self = this;
+		var ajax = $.ajax({
+			url: '/' + this.props.file + '.md',
+			method: 'GET'
+		});
+		ajax.then(function (data) {
+			self.setState({
+				content: data,
+				show: true
+			})
+		})
+	},
+
+	markdown: function () {
+		var html = markdown.toHTML(this.state.content);
+		return {__html: html};
+	}
+});
