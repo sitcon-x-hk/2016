@@ -173,7 +173,9 @@ const Markdown = React.createClass({
 			self.setState({
 				content: data,
 				show: true
-			})
+			});
+			if (typeof self.props.callback === 'function')
+				setTimeout(self.props.callback.bind(self, data), 0);
 		})
 	},
 

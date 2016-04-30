@@ -54,9 +54,22 @@ gulp.task('jsx', function () {
 			harmony: true,
 			es6module: true
 		}))
-		.pipe(sourcemaps.write('.', {addComment: false}))
 		.pipe(babel())
 		.pipe(uglify())
+		.pipe(gulp.dest(scriptTarget));
+});
+
+gulp.task('js', function () {
+	gulp.src([
+			scriptSource + '/*.jsx'
+		])
+		.pipe(concat('game.js'))
+		.pipe(react({
+			harmony: true,
+			es6module: true
+		}))
+		.pipe(babel())
+		//.pipe(uglify())
 		.pipe(gulp.dest(scriptTarget));
 });
 
@@ -92,9 +105,9 @@ gulp.task('watch', function () {
 	});
 
 	watch([
-		scriptSource + '/**/*.js'
+		scriptSource + '/*.jsx'
 	], function () {
-		gulp.run('scripts');
+		gulp.run('js');
 	});
 
 	watch([

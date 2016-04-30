@@ -1,12 +1,20 @@
 class App extends Component {
 	render() {
+		const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 		return (
 			<div>
 				<Header />
 				<Banner />
-				<Wrap>
-					{ this.props.children }
-				</Wrap>
+				<ReactCSSTransitionGroup
+					component={Wrap}
+					transitionName="page"
+					transitionEnterTimeout={500}
+					transitionLeaveTimeout={500}
+				>
+					{React.cloneElement(this.props.children, {
+						key: this.props.location.pathname
+					})}
+				</ReactCSSTransitionGroup>
 				<Footer />
 			</div>
 		);
@@ -79,7 +87,7 @@ class Introduction extends Component {
 						a student-centered organisation
 						hope to provide a stage for all Hong Kong students
 						to express and develop their talent with Open Source.
-						The theme of year 2015 is 'Get to know and join the Open Source',
+						The theme of year 2016 is "Let's Open Source,
 						hoping to join students in the world of Open Source.
 					</p>
 				</Container>
@@ -92,10 +100,42 @@ class CodeOfConduct extends Component {
 	render() {
 		return (
 			<div>
-				<h1 className="brand-green">Code of Conduct</h1>
+				<Markdown file="coc" callback={ this.loadedCallback } />
+			</div>
+		);
+	}
 
-				<Markdown file="coc" />
+	loadedCallback() {
+		document.getElementsByTagName('h2')[0].setAttribute('class', 'brand-green');
+	}
+}
 
+class ContactUs extends Component {
+	render() {
+		return (
+			<div>
+				<h1 className="brand-green center">
+					Contact Us
+				</h1>
+
+				<ul>
+					<li>Facebook: <a href="https://www.facebook.com/SITCONxHK/">SITCON x HK</a></li>
+					<li>Email: sitcon@opensource.hk </li>
+				</ul>
+			</div>
+		)
+	}
+}
+
+class Sponsor extends Component {
+	render() {
+		return (
+			<div>
+				<h1 className="brand-green center">
+					Sponsorship
+				</h1>
+
+				<p>Please contact us with email ( sitcon@opensource.hk )</p>
 			</div>
 		);
 	}
@@ -131,6 +171,9 @@ class Engine extends Component {
 					<Route path="/cfs" component={ CallForStaff }/>
 					<Route path="/about" component={ Introduction } />
 					<Route path="/coc" component={ CodeOfConduct } />
+
+					<Route path="/contact" component={ ContactUs } />
+					<Route path="/sponsor" component={ Sponsor } />
 
 					<Route path="*" component={ NotFound } />
 				</Route>
