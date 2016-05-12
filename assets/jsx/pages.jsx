@@ -165,7 +165,7 @@ class Engine extends Component {
 		const IndexRoute = ReactRouter.IndexRoute;
 
 		return (
-			<Router history={ ReactRouter.browserHistory }>
+			<Router history={ ReactRouter.hashHistory }>
 				<Route path="/" component={App}>
 					<IndexRoute component={ Home } />
 					<Route path="/cfs" component={ CallForStaff }/>
