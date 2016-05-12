@@ -1,4 +1,4 @@
-#header {
+.header {
   background-color: $white;
   box-sizing: border-box;
   display: block;
@@ -7,7 +7,7 @@
     height: 100%;
   }
 
-  #navbar {
+  .navbar {
     background-color: inherit;
     padding: 0 8px;
     height: 84px;
@@ -37,6 +37,8 @@
     -ms-flex-align: center;
     align-items: center;
 
+    font-family: "Noto Sans", sans-serif;
+
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -50,7 +52,7 @@
       box-sizing: border-box;
     }
 
-    #title {
+    .title {
       max-width: 100%;
 
       h1 {
@@ -63,11 +65,14 @@
         box-sizing: border-box;
 
         font-weight: bold;
+        color: $theme-green !important;
+
+        font-family: 'Roboto', "Noto Sans", sans-serif;
       }
     }
   }
 
-  #nav {
+  .nav {
     max-width: 100%;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -75,6 +80,10 @@
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+
+    display: none;
+
+
 
     div {
       padding: 0 10px;
@@ -97,15 +106,53 @@
       margin: 1px 5px;
       text-decoration: none;
       text-transform: uppercase;
-      padding: 6px;
+      padding: 10px;
       min-width: 70px;
       text-align: center;
       box-sizing: border-box;
+      border-radius: 10px;
+      font-weight: 400;
+
+      &:hover {
+        font-weight: bold;
+        color: darken($theme-green, 10%);
+        background-color: darken($gray, 10%);
+      }
+
+      &.active {
+        color: white;
+        background-color: #A50014;
+        font-weight: bold;
+      }
+    }
+
+    .nav-button {
+      max-width: 100%;
+      box-sizing: border-box;
+
+      button {
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.010em;
+        color: rgba(0,0,0,0.87);
+        text-decoration: none;
+        padding: 1px 12px 0;
+
+        span.icon-bar {
+          background-color: #563d7c;
+          margin-top: 4px;
+          display: block;
+          width: 22px;
+          height: 2px;
+          border-radius: 1px;
+          box-sizing: border-box;
+        }
+      }
     }
   }
 }
 
-#banner {
+.banner {
   position: relative;
   background-color: $green;
   background-image: url('/images/bg.jpg');
@@ -115,4 +162,16 @@
   background-position-x: center;
   color: #fff;
   min-height: 264px;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-button {
+    display: none;
+  }
 }

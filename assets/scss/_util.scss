@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
 * {
-  font-family: "Noto Sans", "Microsoft JhengHei", "PT Sans Narrow", "Source Han Sans TWHK", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   box-sizing: border-box;
 }
 
@@ -82,4 +84,13 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 
 .brand-green {
   color: $theme-green;
+}
+
+a {
+  text-decoration: none;
+  color: $theme-green;
+
+  &:hover {
+    font-weight: bold;
+  }
 }
