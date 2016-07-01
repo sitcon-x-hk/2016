@@ -28,7 +28,7 @@ export default class Home extends Component {
 					}}
 				/>
 				<CardText style={{fontSize: '2em', textAlign: 'center'}}>
-					<span style={{ color: redTheme }}>
+					<span style={{ color: redTheme, fontSize: '1.5em' }}>
 						<strong>S</strong>tudent <strong>IT</strong> <strong>CON</strong>ference 2016
 					</span>
 					<br />
@@ -37,6 +37,7 @@ export default class Home extends Component {
 						secondary={true}
 						href="#/cfs"
 						linkButton={true}
+						style={{margin: 30}}
 					/>
 				</CardText>
 			</div>

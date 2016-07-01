@@ -1,7 +1,16 @@
 import {Component} from 'react';
-import {Link} from 'react-router';
+import {Link, hashHistory} from 'react-router';
 import {Drawer, FontIcon, MenuItem} from 'material-ui';
 export default class SideBar extends Component {
+
+	handleLink(href) {
+		const self = this;
+		return function () {
+			hashHistory.push(href);
+			self.props.doClose();
+		}
+	}
+
 	render() {
 		return (
 			<Drawer
@@ -9,16 +18,17 @@ export default class SideBar extends Component {
 				open={this.props.open}
 				onRequestChange={this.props.handleChange}
 			>
-				<MenuItem>
-					<Link to="/" onClick={this.props.doClose}>
-						<FontIcon className="material-icons">
-							home
-						</FontIcon>
+				<MenuItem onTouchTap={this.handleLink('/')}>
 						Home Page
-					</Link>
 				</MenuItem>
-				<MenuItem>
-					<Link to="/cfs" onClick={this.props.doClose}>Call For Staff</Link>
+				<MenuItem onTouchTap={this.handleLink('/intro')}>
+					Introduction
+				</MenuItem>
+				<MenuItem onTouchTap={this.handleLink('/coc')}>
+					Code of Conduct
+				</MenuItem>
+				<MenuItem onTouchTap={this.handleLink('/cfs')}>
+					Call For Staff
 				</MenuItem>
 			</Drawer>
 		);
