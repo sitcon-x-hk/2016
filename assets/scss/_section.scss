@@ -1,0 +1,9 @@
+.lifted-section {
+  //margin-top: 48px;
+  margin-bottom: -48px;
+  padding-bottom: 96px;
+
+  &>div {
+    margin-top: -200px;
+  }
+}

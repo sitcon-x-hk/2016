@@ -1,1 +1,0 @@
-ReactDOM.render(<Engine />, document.getElementById('react-root'));
