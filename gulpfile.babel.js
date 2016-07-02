@@ -51,7 +51,7 @@ gulp.task('script', function () {
 		.bundle()
 		.on('error', log)
 		.pipe(source('app.js'))
-		//.pipe(streamify(uglify()))
+		.pipe(streamify(uglify()))
 		.pipe(gulp.dest(`${baseTarget}/js`))
 });
 

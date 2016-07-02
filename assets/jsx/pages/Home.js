@@ -37,7 +37,16 @@ export default class Home extends Component {
 						secondary={true}
 						href="#/cfs"
 						linkButton={true}
-						style={{margin: 30}}
+						fullWidth={true}
+						style={{
+							margin: 30,
+							display: 'block',
+  						width: '80%',
+  						fontSize: '18px',
+  						borderRadius: '6px',
+  						marginLeft: 'auto',
+  						marginRight: 'auto'
+						}}
 					/>
 				</CardText>
 			</div>
