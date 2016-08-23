@@ -10,17 +10,12 @@ import htmlmin from 'gulp-html-minifier';
 import sass from 'gulp-sass';
 import cleanCss from 'gulp-clean-css';
 
-import streamify from 'gulp-streamify';
-import uglify from 'gulp-uglify';
-
 import webpack from 'webpack';
 import config from './webpack.conf'
-import babelify from 'babelify';
+
 import imagemin from 'gulp-imagemin';
 import svgmin from 'gulp-svgmin';
-import source from 'vinyl-source-stream';
 
-import {log} from 'gulp-util';
 
 const baseSource = `${__dirname}/assets`;
 const baseTarget = `${__dirname}/public`;
@@ -92,16 +87,25 @@ gulp.task('watch', function () {
   gulp.watch([
     'assets/pages/**/*.jinja',
     'assets/layouts/**/*.jinja'
-  ], ['page']).on('change', reload);
+  ], ['page']);
 
   gulp.watch([
-    'assets/js/**/*.js'
-  ], ['script']).on('change', reload);
+    'assets/js/**/*.js',
+    'assets/js/**/*.vue'
+  ], ['script']);
 
   gulp.watch([
     'assets/scss/**/*.scss'
-  ], ['style']).on('change', reload);
+  ], ['style']);
+
+  gulp.watch([
+    'public/**/*.html',
+    'public/**/*.js',
+    'public/**/*.css'
+  ], ['reload']);
 });
+
+gulp.task('reload', reload);
 
 function reload() {
   if (server) server.reload();
