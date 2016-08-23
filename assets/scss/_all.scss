@@ -7,3 +7,57 @@ a {
 body, :root, div {
   font-size: 18px;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer.page-footer {
+  margin: 0 !important;
+}
+
+
+@media only screen and (max-width: 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+.secondary-text {
+  color: $secondary-color !important;
+}
+
+.primary-text {
+  color: $primary-color !important;
+}
+
+strong, .bold-text {
+  font-weight: 700 !important;
+}
+
+.card {
+  > .card-image > img {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  > .card-content {
+    > p {
+      padding: 10px 0;
+    }
+    ul > li {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+
+    a {
+      color: $secondary-color;
+    }
+  }
+}

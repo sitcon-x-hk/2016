@@ -10,3 +10,32 @@
   flex: 1;
   box-sizing: border-box;
 }
+
+.side-nav {
+  > .logo {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 80px;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    > a:hover {
+      background-color: transparent;
+    }
+
+    > a > img {
+      height: 57px;
+      margin-bottom: 32px;
+    }
+  }
+
+  a {
+    padding: 0 16px;
+  }
+}
+
+.card > .card-content {
+  color: $black;
+}
