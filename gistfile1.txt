@@ -1,0 +1,37 @@
+<ab5tract> we are trying to figure out the best/preferred way to interface with sequel
+<ab5tract> so if thats what you recommend, we'l write a converter function that takes the hash and turns it into a URI
+<jeremyevans> ab5tract: That function is already there.  Database#uri
+<ab5tract> well, thats handy :)
+* wishdev (n=jwh@67.170.158.202) has joined #sequel
+<ab5tract> jeremyevans, does Database#uri take a hash?
+<ab5tract> its sort of a stupid question, but im not getting the kind of uri i would expect by doing:
+<ab5tract> irb(main):007:0> q = Sequel::Database.new :adapter => 'jdbc', :database_type => 'postgresql', :host => 'localhost', :database => 'jblog', :user => 'waves'      
+<ab5tract> => #<Sequel::Database: "://waves@localhost/jblog">
+<ab5tract> irb(main):009:0> q.uri
+<ab5tract> => "://waves@localhost/jblog"
+<ab5tract> my bad about all the pasting to the room, too, ill switch to pastie next time
+<jeremyevans> ab5tract: You shouldn't create a database with Database.new. it doesn't work that way.  You could do Sequel::JDBC::Database.new(:uri=>'jdbc:postgresql://localhost/jblog?user=waves'), but using Sequel.connect is better
+<jeremyevans> ab5tract: Database#uri creates a URI from the existing hash of options (that it may have parsed from the given connection string)
+<ab5tract> okay, so its a bit different than what i'll need
+<jeremyevans> ab5tract: What are you trying to do?
+<ab5tract> here's an example of how we set the database
+<ab5tract> in sequel with mri:
+<ab5tract> database = {:adapter => 'sqlite3', :database => 'here.db'}
+<ab5tract> then later we do Sequel.connect( database )
+<ab5tract> (basically, the real code is better than that)
+<jeremyevans> You could just use connection strings everywhere: 'sqlite://here.db'
+<ab5tract> so, for now i can set database = 'the/uri'
+<ab5tract> or, we can write a hash to uri conversion
+<ab5tract> jeremyevans, right
+* valeri_ufo has quit (Nick collision from services.)
+* valeri_ufo (n=ufo@Mb51f.m.pppool.de) has joined #sequel
+<jeremyevans> ab5tract: If you want to continue using the hash, just use :uri=>'jdbc:...' for jdbc
+<ab5tract> but we were thinking we would defer to whatever method the orm developers favor
+<ab5tract> ah
+<ab5tract> thats a good point
+<ab5tract> however, it would probably be more clear to users to specify with the hashes, then we construct the uri for them
+<jeremyevans> ab5tract: Note that using JRuby doesn't imply using JDBC.  You can use the postgres-pr adapter, for example, it works fine.
+<ab5tract> really?
+<ab5tract> well thats good to know too
+<ab5tract> postgres-pr works with sequel, then?
+<jeremyevans> The hash to uri should be fairly easy.  Look at Database#uri as a starting point.  You'll have to use a different protocol, and handle the username and password differently, but otherwise it should be similar
