@@ -3,10 +3,10 @@
         <div class="col s12 m12">
             <div class="card">
                 <div class="card-image">
-                    <logo></logo>
+                    <logo height="240"></logo>
+                    <h4 class="secondary-text center-align">Code of Conduct</h4>
                 </div>
                 <div class="card-content">
-                    <h2 class="card-title center-align">Code of Conduct</h2>
                     <p>
                         Hong Kong is a pluralistic society,
                         everyone has different points of view about different people and things,
