@@ -43,7 +43,8 @@ strong, .bold-text {
 
 .card {
   > .card-image > img {
-    width: 300px;
+    width: auto;
+    height: 300px;
     margin: 0 auto;
   }
 
@@ -60,4 +61,12 @@ strong, .bold-text {
       color: $secondary-color;
     }
   }
+}
+
+.text-strong {
+  font-size: 2em;
+}
+
+.text-call {
+  font-size: 1.5em;
 }
