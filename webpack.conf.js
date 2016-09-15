@@ -1,9 +1,14 @@
-import {optimize} from 'webpack';
+import UglifyJsPlugin from 'webpack/lib/optimize/UglifyJsPlugin';
+import OccurenceOrderPlugin from 'webpack/lib/optimize/OccurrenceOrderPlugin';
+import DedupePlugin from 'webpack/lib/optimize/DedupePlugin';
 
-const {UglifyJsPlugin} = optimize;
 
 const config = {
-  plugins: [new UglifyJsPlugin({minimize: true})],
+  plugins: [
+    new UglifyJsPlugin({minimize: true}),
+    new OccurenceOrderPlugin(),
+    new DedupePlugin()
+  ],
   externals: {
     'vue': 'Vue',
     'vue-router': 'VueRouter'
@@ -45,7 +50,7 @@ const config = {
   },
   vue: {
     html: {
-      root: 'public'
+      root: './public'
     }
   }
 };

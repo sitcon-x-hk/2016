@@ -1,7 +1,7 @@
 import browserSync from 'browser-sync';
 
 import gulp from 'gulp';
-
+import {log} from 'gulp-util';
 import jinja from 'gulp-nunjucks';
 import {Environment, FileSystemLoader} from 'nunjucks';
 import rename from 'gulp-rename';
@@ -12,9 +12,9 @@ import cleanCss from 'gulp-clean-css';
 
 import webpack from 'webpack';
 import config from './webpack.conf'
+import fs from 'fs';
 
 import imagemin from 'gulp-imagemin';
-import svgmin from 'gulp-svgmin';
 
 
 const baseSource = `${__dirname}/assets`;
@@ -41,15 +41,29 @@ gulp.task('style', function () {
 });
 
 gulp.task('script', function (cb) {
-  webpack(config, cb);
+  webpack(config, function (e, stats) {
+    if (e) {
+      throw new PluginError('[webpack]', e);
+    } else {
+      log('[webpack]', stats.toString({
+        version: true,
+        timings: true,
+        assets: true,
+        chunks: true,
+        chunkModules: true,
+        modules: true
+      }));
+      fs.writeFile('./webpack.json', JSON.stringify(stats.toJson('verbose')));
+    }
+    cb();
+  });
 });
 
 gulp.task('image', function () {
   gulp.src('assets/images/**/*.*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('public/images'));
-  gulp.src('images/**/*.svg')
-    .pipe(svgmin())
+    .pipe(imagemin({
+      progressive: true
+    }))
     .pipe(gulp.dest('public/images'));
 });
 
