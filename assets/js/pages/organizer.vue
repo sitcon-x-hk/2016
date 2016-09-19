@@ -26,12 +26,37 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-title">Supporting Organization</div>
+                    <div class="row">
+                        <Supporting
+                                image="https://cdn.sitconhk.pro/2016/images/support/cota.png"
+                                name="Hong Kong Creative Open Technology Association"
+                        ></Supporting>
+                        <Supporting
+                                image="https://cdn.sitconhk.pro/2016/images/support/oshk.png"
+                                name="Open Source Hong Kong"
+                        ></Supporting>
+                        <Supporting
+                                image="https://cdn.sitconhk.pro/2016/images/support/hklug.png"
+                                name="Hong Kong Linux User Group"
+                        ></Supporting>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
     export default {
         components: {
-            'Organizer': require('../Organizer.vue')
+            'Organizer': require('../Organizer.vue'),
+            'Supporting': require('../Supporting.vue')
         }
     }
 </script>
