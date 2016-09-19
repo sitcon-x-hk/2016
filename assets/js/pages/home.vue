@@ -21,7 +21,7 @@
     </div>
     <div class="row">
         <div class="col s6 m4">
-            <a v-link="{ path: './intro'}">
+            <a v-link="{ path: './organizers'}">
                 <div class="card">
                     <div class="card-content">
                         <div class="card-title center-align">About Us</div>
@@ -30,10 +30,10 @@
             </a>
         </div>
         <div class="col s6 m4">
-            <a v-link="{ path: './cfp' }">
+            <a v-link="{ path: './timetable' }">
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-title center-align">Want to Talk?</div>
+                        <div class="card-title center-align">Timeable</div>
                     </div>
                 </div>
             </a>
@@ -42,7 +42,7 @@
             <a v-link="{ path: './sponsor' }">
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-title center-align">Sponsor Us</div>
+                        <div class="card-title center-align">Sponsorship</div>
                     </div>
                 </div>
             </a>
