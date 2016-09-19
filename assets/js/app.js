@@ -16,7 +16,6 @@ routing(router);
 
 router.start({}, '#app');
 
-$('html').niceScroll();
 $(Array.prototype.slice.call(document.getElementsByClassName('button-collapse'))).sideNav();
 const side = document.getElementById('side-nav');
 $(side).delegate('li a', 'click', function () {
