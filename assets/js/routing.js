@@ -17,6 +17,12 @@ export default function (router) {
     },
     'venue': {
       component: require('./pages/venue.vue')
+    },
+    'organizers': {
+      component: require('./pages/organizer.vue')
+    },
+    'timetable': {
+      component: require('./pages/timetable.vue')
     }
   })
 }
