@@ -4,9 +4,9 @@
             <div class="card">
                 <div class="card-image">
                     <logo></logo>
+                    <h4 class="center-align secondary-text">Call for Sponsor</h4>
                 </div>
                 <div class="card-content">
-                    <h4>Call for Sponsor</h4>
                     <p>
                         A conference require lots of factors to make it awesome.
                         Sponsoring can help us to make SITCON x HK great.
