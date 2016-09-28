@@ -1,0 +1,21 @@
+{
+  "coscup-pass": {
+    "title": "COSCUP Pass",
+    "level": "",
+    "start": "",
+    "end": "",
+    "location": "",
+    "language": "",
+    "tag": [],
+    "introduction": "",
+    "speakers": [
+      {
+        "name": "Denny Huang",
+        "image": "",
+        "community": "CPRTeam",
+        "communityLogo": "",
+        "github": "DennyHuang"
+      }
+    ]
+  }
+}
