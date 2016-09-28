@@ -1,20 +1,198 @@
 {
   "coscup-pass": {
-    "title": "COSCUP Pass",
-    "level": "",
+    "title": "COSCUP Pass - 手機報到，每分鐘 40 人",
+    "level": "advanced",
     "start": "",
     "end": "",
     "location": "",
-    "language": "",
-    "tag": [],
-    "introduction": "",
+    "language": "mandarin",
+    "tags": [],
+    "introduction": "上千人的研討會當只有 30 分鐘的報到時間平均每分鐘就要完成 40 人的報到，COSCUP Pass 是 CPRTeam 線路組在本年度 COSCUP 開源人年會的新嘗試。本演講將著簡介整體系統架構及設計規劃，著重於 Andorid 使用到的相關技術，以及如何運用 Google Firebase 的 Dynamic Links 給予使用者無感怯順暢的安裝登入體驗。",
     "speakers": [
       {
         "name": "Denny Huang",
         "image": "",
         "community": "CPRTeam",
         "communityLogo": "",
-        "github": "DennyHuang"
+        "github": "denny0223"
+      }
+    ]
+  },
+  "learning-php-how-to-get-started": {
+    "title": "Learning PHP: How to get started",
+    "level": "beginner",
+    "start": "",
+    "end": "",
+    "location": "",
+    "language": "english",
+    "tags": [],
+    "introduction": "",
+    "speakers": [
+      {
+        "name": "Yeung KaYue",
+        "image": "",
+        "community": "Hong Kong PHP User Group",
+        "communityLogo": "",
+        "github": "kayue"
+      }
+    ]
+  },
+  "ecosystem-of-it-industry": {
+    "title": "Ecosystem of IT industry",
+    "level": "beginner",
+    "start": "",
+    "end": "",
+    "location": "",
+    "language": "english",
+    "tags": [],
+    "introduction": "",
+    "speakers": [
+      {
+        "name": "Wan Leung Wong",
+        "image": "",
+        "community": "Hong Kong Creative Open Technology Association",
+        "communityLogo": "",
+        "github": "wanleung"
+      }
+    ]
+  },
+  "": {
+    "title": "MySQL (TBD)",
+    "level": "beginner",
+    "start": "",
+    "end": "",
+    "location": "",
+    "language": "english",
+    "tags": [],
+    "introduction": "",
+    "speakers": [
+      {
+        "name": "Ivan Ma",
+        "image": "",
+        "community": "Hong Kong MySQL User Group",
+        "communityLogo": "",
+        "github": ""
+      }
+    ]
+  },
+  "git-how-to-master-your-source-code-files-like-a-pro": {
+    "title": "Git: How to master your source code files like a Pro",
+    "level": "beginner",
+    "start": "",
+    "end": "",
+    "location": "",
+    "language": "english / cantonese",
+    "tags": [],
+    "introduction": "Have you ever gone crazy for your source code files? Or did you ever want to share your software projects with others on Github? Here is a quick intro for you. From nothing to professional. (Bring your notebook if possible)",
+    "speakers": [
+      {
+        "name": "Koala Yeung",
+        "image": "",
+        "community": "Hong Kong Linux User Group",
+        "communityLogo": "",
+        "github": "yookoala"
+      }
+    ]
+  },
+  "using-foss-for-security-how-open-source-protects-your-privacy": {
+    "title": "Using FOSS for security: how open source protects your privacy",
+    "level": "beginner",
+    "start": "",
+    "end": "",
+    "location": "",
+    "language": "english",
+    "tags": [],
+    "introduction": "Why should students and academics be concerned about privacy, and how can they protect themselves in cyberspace without expensive security tools?We will discuss about surveillance, power of open source security software such as Whisper Systems, Quicktun, PGP, and encrypting hard drives using open source tools. In a nutshell, we want to empathize that we can achieve greater privacy for individuals by utilizing shared public data on open source platforms.",
+    "speakers": [
+      {
+        "name": "Christine Lee",
+        "image": "",
+        "community": "HKUST",
+        "communityLogo": "",
+        "github": ""
+      },
+      {
+        "name": "David Lanzendörfer",
+        "image": "",
+        "community": "Dim Sum Labs",
+        "communityLogo": "",
+        "github": ""
+      }
+    ]
+  },
+  "modern-frontend-stack-meteor-react": {
+    "title": "Modern Frontend Stack: Meteor + React",
+    "level": "beginner",
+    "start": "",
+    "end": "",
+    "location": "",
+    "language": "english",
+    "tags": [],
+    "introduction": "",
+    "speakers": [
+      {
+        "name": "Kai-Chun Hsu",
+        "image": "",
+        "community": "HKU",
+        "communityLogo": "",
+        "github": ""
+      }
+    ]
+  },
+  "iot-mad-easy-using-raspberry-pi-and-sensortags": {
+    "title": "IoT made easy: using Raspberry Pi and Sensortags",
+    "level": "advanced",
+    "start": "",
+    "end": "",
+    "location": "",
+    "language": "english",
+    "tags": [],
+    "introduction": "This talk will talk about how Raspberry Pi 3 can connect to a TI sensortags via bluetooth by Node.js. And how to stream real time data to the browser using Websocket. In addition, building a QR reader using a webcam and Raspberry Pi.",
+    "speakers": [
+      {
+        "name": "Jeremy Yen",
+        "image": "",
+        "community": "HITCON",
+        "communityLogo": "",
+        "github": "jeremy5189"
+      }
+    ]
+  },
+  "build-a-chat-app-quick-with-skygear-an-open-source-baas": {
+    "title": "Building a chat app quick with Skygear - an Open-source BaaS",
+    "level": "advanced",
+    "start": "",
+    "end": "",
+    "location": "",
+    "language": "english",
+    "tags": [],
+    "introduction": "Building a full feature app isn't easy - it involves front-end UI and backend architecture.  how to Skygear (http://skygear.io) - an open source BaaS to build mobile apps. We will do a live demo on how to build a chat app without writing a line of backend code.",
+    "speakers": [
+      {
+        "name": "David Ng",
+        "image": "",
+        "community": "OurSky",
+        "communityLogo": "",
+        "github": "david90"
+      }
+    ]
+  },
+  "sitcon-from-past-to-future-and-contribute-open-source": {
+    "title": "SITCON From Past to Future and Contribute Open Source",
+    "level": "advanced",
+    "start": "",
+    "end": "",
+    "location": "",
+    "language": "manderin",
+    "tags": [],
+    "introduction": "",
+    "speakers": [
+      {
+        "name": "Poren Chiang",
+        "image": "",
+        "community": "SITCON - TW",
+        "communityLogo": "",
+        "github": "rschiang"
       }
     ]
   }
