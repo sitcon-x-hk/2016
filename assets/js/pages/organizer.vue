@@ -48,6 +48,10 @@
                 image="https://cdn.sitconhk.pro/2016/images/support/hklug.jpg"
                 name="Hong Kong Linux User Group"
         ></Supporting>
+        <Supporting
+                name="SITCON - TW Community"
+                image="https://cdn.sitconhk.pro/2016/images/support/sitcon.png"
+        ></Supporting>
     </div>
 </template>
 
