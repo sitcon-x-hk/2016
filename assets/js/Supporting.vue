@@ -1,16 +1,20 @@
 <template>
-    <div class="col s8 m4">
-        <img :src="image" :alt="name">
-        <div>
-            {{ name }}
+    <div class="col s6 m3">
+        <div class="card">
+            <div class="card-image">
+                <img :src="image" :alt="name">
+            </div>
+            <div class="card-content">
+                {{ name }}
+            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
     img {
-        max-height: 200px;
-        max-width: 200px;
+        width: 200px !important;
+        height: auto !important;
         margin-left: auto;
         margin-right: auto;
     }

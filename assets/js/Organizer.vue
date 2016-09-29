@@ -1,22 +1,26 @@
 <template>
     <div class="col s12 m6">
-        <img :src="image" :alt="name">
-        <div>
-            {{ name }}
+        <div class="card">
+            <div class="card-image">
+                <img :src="image" :alt="name">
+            </div>
+            <div class="card-content">
+                {{ name }}
+            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
     img {
-        max-height: 300px;
-        max-width: 400px;
+        height: auto !important;
+        max-width: 300px !important;
         margin-left: auto;
         margin-right: auto;
     }
 
-    div.col {
-        padding-top: 20px;
+    .card-content {
+        text-align: center;
     }
 </style>
 
