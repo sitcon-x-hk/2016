@@ -8,8 +8,8 @@
                         <thead>
                         <tr>
                             <th>Time</th>
-                            <th>LT A</th>
-                            <th>LT B</th>
+                            <th>LT 16</th>
+                            <th>LT 17</th>
                         </tr>
                         </thead>
                         <tbody>
