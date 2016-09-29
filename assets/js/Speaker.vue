@@ -1,7 +1,7 @@
 <template>
   <div class="col s12 m12">
     <div class="card">
-      <div class="card-image">
+      <div class="card-image" v-show="image.length">
         <img :src="image">
       </div>
       <div class="card-content">
@@ -10,6 +10,7 @@
           <li>Community: {{ community }}</li>
         </ul>
         <p>{{ introduce }}</p>
+        <img :src="communityLogo" v-show="communityLogo">
       </div>
     </div>
   </div>
