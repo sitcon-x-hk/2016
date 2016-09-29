@@ -23,6 +23,10 @@ export default function (router) {
     },
     'timetable': {
       component: require('./pages/timetable.vue')
+    },
+    'topic/:topic': {
+      name: 'topic',
+      component: require('./pages/topic.vue')
     }
   })
 }
