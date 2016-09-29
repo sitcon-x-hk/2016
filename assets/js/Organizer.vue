@@ -19,7 +19,8 @@
         margin-right: auto;
     }
 
-    .card-content {
+    .card {
+        height: 500px;
         text-align: center;
     }
 </style>

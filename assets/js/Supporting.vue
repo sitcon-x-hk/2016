@@ -1,5 +1,5 @@
 <template>
-    <div class="col s6 m3">
+    <div class="col s12 m3">
         <div class="card">
             <div class="card-image">
                 <img :src="image" :alt="name">
@@ -19,8 +19,9 @@
         margin-right: auto;
     }
 
-    div.col {
-        padding-top: 20px;
+    .card {
+        height: 350px;
+        text-align: center;
     }
 </style>
 

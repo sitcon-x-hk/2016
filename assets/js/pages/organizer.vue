@@ -45,7 +45,7 @@
                 name="Open Source Hong Kong"
         ></Supporting>
         <Supporting
-                image="https://cdn.sitconhk.pro/2016/images/support/hklug.png"
+                image="https://cdn.sitconhk.pro/2016/images/support/hklug.jpg"
                 name="Hong Kong Linux User Group"
         ></Supporting>
     </div>
