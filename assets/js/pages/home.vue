@@ -33,7 +33,7 @@
             <a v-link="{ path: './timetable' }">
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-title center-align">Timeable</div>
+                        <div class="card-title center-align">Timetable</div>
                     </div>
                 </div>
             </a>
