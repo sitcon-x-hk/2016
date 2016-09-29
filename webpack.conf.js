@@ -43,6 +43,10 @@ const config = {
         loader: 'babel'
       },
       {
+        test: /\.json$/,
+        loader: 'json'
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)$/,
         loader: 'url'
       }
