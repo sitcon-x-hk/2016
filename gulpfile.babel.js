@@ -105,7 +105,8 @@ gulp.task('watch', function () {
 
   gulp.watch([
     'assets/js/**/*.js',
-    'assets/js/**/*.vue'
+    'assets/js/**/*.vue',
+    'assets/data.json'
   ], ['script']);
 
   gulp.watch([
