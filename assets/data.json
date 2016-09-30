@@ -7,15 +7,15 @@
     "location": "LT 16",
     "language": "English",
     "tags": ["Android App", "Python"],
-    "introduction": "上千人的研討會當只有 30 分鐘的報到時間平均每分鐘就要完成 40 人的報到，COSCUP Pass 是 CPRTeam 線路組在本年度 COSCUP 開源人年會的新嘗試。本演講將著簡介整體系統架構及設計規劃，著重於 Andorid 使用到的相關技術，以及如何運用 Google Firebase 的 Dynamic Links 給予使用者無感怯順暢的安裝登入體驗。",
+    "introduction": "A seminar with more than a thousand of participant, COSCUP Pass is a new attempt by the CPRTeam at this year's COSCUP when only 30 minutes of registation time is avaliable, which means an average of 40 participant finish check-in per minute. This presentation is going to introduce the overall system architecture and design planning, focusing on Andorid to use the relevant technology, and how to use dynamic link of Google Firebase to give users a timeless and smooth installation login experience.",
     "speakers": [
       {
         "name": "Denny Huang",
         "image": "https://cdn.sitconhk.pro/2016/images/speaker/DennyHuang.jpg",
-        "community": "CPRTeam",
-        "communityLogo": "",
+        "community": "SITCON - TW",
+        "communityLogo": "https://cdn.sitconhk.pro/2016/images/support/sitcon.png",
         "github": "denny0223",
-        "introduce": "SITCON 學生計算機年會共同發起人，2013 及 2014 年會總召，目前於雷亞遊戲（Rayark Inc.）擔任遊戲後端工程師；在正規教育中特例獨行，妄想透過改善教育讓台灣更進步，崇尚開源精神，熱愛使用者界面 (UI) 以外的多種技術。"
+        "introduce": "Co-founder of SITCON, organizer of SITCON 2013 and 2014, currently being a game backend engineer in Rayark Inc.; Having a special and different path in regular education, hoping to change Taiwan to become better through education, love opensource and a variety of technologies beside User Interface (UI)."
       }
     ]
   },
@@ -26,7 +26,7 @@
     "end": "",
     "location": "",
     "language": "English",
-    "tags": [],
+    "tags": ["PHP", "Modern"],
     "introduction": "",
     "speakers": [
       {
@@ -123,7 +123,7 @@
   },
   "Meteor-React": {
     "title": "Modern Frontend Stack: Meteor + React",
-    "level": "beginner",
+    "level": "Medium",
     "start": "",
     "end": "",
     "location": "",
@@ -180,7 +180,7 @@
   },
   "SITCON-open-source": {
     "title": "SITCON From Past to Future and Contribute Open Source",
-    "level": "advanced",
+    "level": "Beginner",
     "start": "14:30",
     "end": "15:15",
     "location": "LT 16",
@@ -192,15 +192,16 @@
         "name": "Poren Chiang",
         "image": "",
         "community": "SITCON - TW",
-        "communityLogo": "",
+        "communityLogo": "https://cdn.sitconhk.pro/2016/images/support/sitcon.png",
         "github": "rschiang"
       },
       {
         "name": "Tony Yip",
-        "image": "",
+        "image": "https://tonyhhyip.me/images/sticker.png",
         "community": "SITCON x HK",
         "communityLogo": "https://cdn.sitconhk.pro/2016/images/logo/sitcon-x-hk-color.png",
-        "github": "tonyhhyip"
+        "github": "tonyhhyip",
+        "introduce": "Chairperson of SITCON 2015 and 2016"
       }
     ]
   }
