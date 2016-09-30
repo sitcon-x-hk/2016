@@ -93,17 +93,10 @@
     </div>
 </template>
 
-<style scoped>
-    .card-content {
-        color: black;
-    }
-</style>
-
 <script>
+    import Organizer from '../Organizer.vue';
+    import Supporting from '../Supporting.vue';
     export default {
-        components: {
-            'Organizer': require('../Organizer.vue'),
-            'Supporting': require('../Supporting.vue')
-        }
+        components: {Organizer, Supporting}
     }
 </script>

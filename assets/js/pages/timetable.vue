@@ -44,12 +44,6 @@
     </div>
 </template>
 
-<style scoped>
-    ul.collection > li {
-        color: black;
-    }
-</style>
-
 <script>
     import schedules from '../schedules';
     import data from '../../data.json';
