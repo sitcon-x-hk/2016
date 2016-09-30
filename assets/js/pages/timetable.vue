@@ -60,9 +60,6 @@
                 topics[key] = data[key];
             });
             return {schedules, topics};
-        },
-        ready() {
-
         }
     }
 </script>

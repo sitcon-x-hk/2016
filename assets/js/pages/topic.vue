@@ -1,7 +1,8 @@
 <template v-show="title.length > 0">
     <div class="row">
         <div class="col s12 m12">
-            <h3 class="secondary-text">{{ title }}</h3>
+            <logo class="center-block"></logo>
+            <h3 class="secondary-text center-align">{{ title }}</h3>
         </div>
     </div>
     <div class="container">
@@ -33,8 +34,9 @@
                     :image="speaker.image"
                     :name="speaker.name"
                     :community="speaker.community"
-                    :communityLogo="speaker.communityLogo"
+                    :logo="speaker.communityLogo"
                     :introduce="speaker.introduce"
+                    :github="speaker.github"
             ></Speaker>
         </div>
     </div>
@@ -51,6 +53,8 @@
         },
         ready() {
             $('.chips').material_chip();
+            console.log(this.speakers[0].communityLogo);
+
         }
     }
 </script>
