@@ -9,6 +9,9 @@ export default function (router) {
     'cfp': {
       component: require('./pages/cfp.vue')
     },
+    'sponsor': {
+      component: require('./pages/sponsor.vue')
+    },
     'venue': {
       component: require('./pages/venue.vue')
     },

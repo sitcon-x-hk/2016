@@ -36,10 +36,10 @@
             </a>
         </div>
         <div class="col s6 m4">
-            <a v-link="{ path: './coc' }">
+            <a v-link="{ path: './sponsor' }">
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-title center-align">Code Of Conduct</div>
+                        <div class="card-title center-align">Sponsorship</div>
                     </div>
                 </div>
             </a>
