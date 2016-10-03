@@ -58,7 +58,7 @@
     ]
   },
   "mysql": {
-    "title": "MySQL (TBD)",
+    "title": "RDBMS and document store in MySQL",
     "level": "beginner",
     "start": "",
     "end": "",
