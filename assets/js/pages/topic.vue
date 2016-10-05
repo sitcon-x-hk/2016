@@ -21,7 +21,7 @@
                         </div>
                         <p v-show="level">Level: {{ level }}</p>
                         <div v-show="introduction">
-                            {{ introduction }}
+                            {{{ introduction }}}
                         </div>
                     </div>
                 </div>

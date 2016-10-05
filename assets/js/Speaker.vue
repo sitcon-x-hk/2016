@@ -9,7 +9,7 @@
                 <p>Community: {{ community }}</p>
                 <img :src="logo" v-show="logo">
 
-                <p>{{ introduce }}</p>
+                <p>{{{ introduce }}}</p>
             </div>
             <div class="card-action" v-show="github">
                 <a :href="url">
@@ -21,7 +21,7 @@
 </template>
 
 <style scoped>
-    img {
+    .card-content > img {
         max-width: 300px;
         height: auto;
     }
