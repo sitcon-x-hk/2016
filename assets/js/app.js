@@ -5,6 +5,10 @@ import VueRouter from 'vue-router';
 import routing from './routing';
 import Logo from './Logo.vue';
 
+if (location.hash.indexOf('%21') > -1) {
+  location.href = location.href.replace('%21', '');
+}
+
 Vue.component('logo', Logo);
 Vue.use(VueRouter);
 

@@ -7,7 +7,7 @@
     "location": "LT 16",
     "language": "English",
     "tags": ["Android App", "Python"],
-    "introduction": "A seminar with more than a thousand of participant, COSCUP Pass is a new attempt by the CPRTeam at this year's COSCUP when only 30 minutes of registation time is avaliable, which means an average of 40 participant finish check-in per minute. This presentation is going to introduce the overall system architecture and design planning, focusing on Andorid to use the relevant technology, and how to use dynamic link of Google Firebase to give users a timeless and smooth installation login experience.",
+    "introduction": "A seminar with more than a thousand of participant, COSCUP Pass is a new attempt by the CPRTeam at this year's COSCUP when only 30 minutes of registration time is available, which means an average of 40 participant finish check-in per minute. This presentation is going to introduce the overall system architecture and design planning, focusing on Andorid to use the relevant technology, and how to use dynamic link of Google Firebase to give users a timeless and smooth installation login experience.",
     "speakers": [
       {
         "name": "Denny Huang",
@@ -15,7 +15,7 @@
         "community": "SITCON - TW",
         "communityLogo": "https://cdn.sitconhk.pro/2016/images/support/sitcon.png",
         "github": "denny0223",
-        "introduce": "Co-founder of SITCON, organizer of SITCON 2013 and 2014, currently being a game backend engineer in Rayark Inc.; Having a special and different path in regular education, hoping to change Taiwan to become better through education, love opensource and a variety of technologies beside User Interface (UI)."
+        "introduce": "Co-founder of SITCON, organizer of SITCON 2013 and 2014, currently being a game backend engineer in Rayark Inc.; Having a special and different path in regular education, hoping to change Taiwan to become better through education, love opensource and a variety of technologies besides User Interface (UI)."
       }
     ]
   },
