@@ -1,6 +1,6 @@
 export default function (router) {
   router.map({
-    '/': {
+    '*': {
       component: require('./pages/home.vue')
     },
     'coc': {
