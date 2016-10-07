@@ -16,10 +16,14 @@
                             <tr v-for="schedule in schedules">
                                 <td> {{ schedule.start }} - {{ schedule.end }} </td>
                                 <td v-show="schedule.combine" colspan="2">
-                                    {{ schedule.title }}
+                                    <Topic :id="schedule.title"></Topic>
                                 </td>
-                                <td v-show="!schedule.combine">{{ schedule.main }}</td>
-                                <td v-show="!schedule.combine">{{ schedule.sub }}</td>
+                                <td v-show="!schedule.combine">
+                                    <Topic :id="schedule.main"></Topic>
+                                </td>
+                                <td v-show="!schedule.combine">
+                                    <Topic :id="schedule.sub"></Topic>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -27,33 +31,15 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div>
-        <ul class="collection with-header">
-            <li class="collection-header"><h4>Topics</h4></li>
-            <li class="collection-item" v-for="topic in topics">
-                <div>
-                    {{ topic.title }}
-                    <a v-link="{ name: 'topic', params: {topic: $key} }" class="secondary-content">
-                        <i class="material-icons">send</i>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        </div>
-    </div>
 </template>
 
 <script>
     import schedules from '../schedules';
-    import data from '../../data.json';
+    import Topic from '../Topic.vue';
     export default {
+        components: {Topic},
         data() {
-            const topics = {};
-            Object.keys(data).forEach(function (key) {
-                topics[key] = data[key];
-            });
-            return {schedules, topics};
+            return {schedules};
         }
     }
 </script>

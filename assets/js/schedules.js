@@ -14,20 +14,20 @@ const timetable = [
   {
     start: '10:15',
     end: '11:00',
-    title: 'Keynote',
+    title: 'skygear',
     combine: true
   },
   {
     start: '11:15',
     end: '12:00',
-    main: 'Talk 1',
-    sub: 'Talk 2'
+    main: 'coscup-pass',
+    sub: 'FOSS-security'
   },
   {
     start: '12:15',
     end: '13:00',
-    main: 'Talk 3',
-    sub: 'Talk 4'
+    main: 'php',
+    sub: 'IoT'
   },
   {
     start: '13:00',
@@ -38,20 +38,20 @@ const timetable = [
   {
     start: '14:30',
     end: '15:15',
-    title: 'Keynote',
+    title: 'SITCON-open-source',
     combine: true
   },
   {
     start: '15:30',
     end: '16:15',
-    main: 'Talk 5',
-    sub: 'Talk 6'
+    main: 'Meteor-React',
+    sub: 'ecosystem'
   },
   {
     start: '16:30',
     end: '17:15',
-    main: 'Talk 7',
-    sub: 'Talk 8'
+    main: 'git',
+    sub: 'mysql'
   },
   {
     start: '17:30',

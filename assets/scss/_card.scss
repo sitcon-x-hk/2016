@@ -2,3 +2,25 @@
   background-color: transparent !important;
   box-shadow: none;
 }
+
+.card {
+  > .card-image > img {
+    width: auto;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+
+  > .card-content {
+    > p {
+      padding: 10px 0;
+    }
+    ul > li {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+
+    a {
+      color: $secondary-color;
+    }
+  }
+}

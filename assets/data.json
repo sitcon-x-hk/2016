@@ -2,8 +2,8 @@
   "coscup-pass": {
     "title": "COSCUP Pass 報到 App 開發秘辛",
     "level": "Advanced",
-    "start": "",
-    "end": "",
+    "start": "11:15",
+    "end": "12:00",
     "location": "LT 16",
     "language": "English",
     "tags": ["Android App", "Python"],
@@ -22,30 +22,31 @@
   "php": {
     "title": "Learning PHP: How to get started",
     "level": "Beginner",
-    "start": "",
-    "end": "",
-    "location": "",
+    "start": "12:15",
+    "end": "13:00",
+    "location": "LT 16",
     "language": "English",
-    "tags": ["PHP", "Modern"],
+    "tags": ["PHP", "Modern", "Web"],
     "introduction": "",
     "speakers": [
       {
         "name": "Yeung KaYue",
-        "image": "",
+        "image": "https://cdn.sitconhk.pro/2016/images/speaker/ka-yue.jpg",
         "community": "Hong Kong PHP User Group",
         "communityLogo": "",
-        "github": "kayue"
+        "github": "kayue",
+        "introduce": ""
       }
     ]
   },
   "ecosystem": {
     "title": "Ecosystem of IT industry",
     "level": "Beginner",
-    "start": "",
-    "end": "",
-    "location": "",
+    "start": "15:30",
+    "end": "16:15",
+    "location": "LT 17",
     "language": "English",
-    "tags": [],
+    "tags": ["Ecosystem", "IT"],
     "introduction": "",
     "speakers": [
       {
@@ -59,11 +60,11 @@
   },
   "mysql": {
     "title": "RDBMS and document store in MySQL",
-    "level": "beginner",
-    "start": "",
-    "end": "",
-    "location": "",
-    "language": "english",
+    "level": "Beginner",
+    "start": "16:30",
+    "end": "17:15",
+    "location": "LT 17",
+    "language": "English",
     "tags": ["MySQL"],
     "introduction": "",
     "speakers": [
@@ -79,9 +80,9 @@
   "git": {
     "title": "Git: How to master your source code files like a Pro",
     "level": "Beginner",
-    "start": "",
-    "end": "",
-    "location": "",
+    "start": "16:30",
+    "end": "17:15",
+    "location": "LT 16",
     "language": "English / Cantonese",
     "tags": ["Git", "Version Control"],
     "introduction": "Have you ever gone crazy for your source code files? Or did you ever want to share your software projects with others on Github? Here is a quick intro for you. From nothing to professional. (Bring your notebook if possible)",
@@ -98,64 +99,66 @@
   "FOSS-security": {
     "title": "Using FOSS for security: how open source protects your privacy",
     "level": "Beginner",
-    "start": "",
-    "end": "",
-    "location": "",
+    "start": "11:15",
+    "end": "12:00",
+    "location": "LT 17",
     "language": "English",
     "tags": ["Security"],
-    "introduction": "Why should students and academics be concerned about privacy, and how can they protect themselves in cyberspace without expensive security tools?We will discuss about surveillance, power of open source security software such as Whisper Systems, Quicktun, PGP, and encrypting hard drives using open source tools. In a nutshell, we want to empathize that we can achieve greater privacy for individuals by utilizing shared public data on open source platforms.",
+    "introduction": "Why should students and academics be concerned about privacy, and how can they protect themselves in cyberspace without expensive security tools? We will discuss about surveillance, power of open source security software such as Whisper Systems, Quicktun, PGP, and encrypting hard drives using open source tools. In a nutshell, we want to empathize that we can achieve greater privacy for individuals by utilizing shared public data on open source platforms.",
     "speakers": [
       {
         "name": "Christine Lee",
-        "image": "",
-        "community": "HKUST",
-        "communityLogo": "",
-        "github": ""
+        "image": "https://avatars1.githubusercontent.com/u/8842929?v=3&s=466",
+        "community": "Dim Sum Labs",
+        "communityLogo": "http://www.dimsumlabs.com/wp-content/uploads/2016/02/logo-Dim-Sum-Labs-top.svg",
+        "github": "ckylee"
       },
       {
         "name": "David Lanzendörfer",
-        "image": "",
+        "image": "https://avatars0.githubusercontent.com/u/6307347?v=3&s=466",
         "community": "Dim Sum Labs",
-        "communityLogo": "",
-        "github": ""
+        "communityLogo": "http://www.dimsumlabs.com/wp-content/uploads/2016/02/logo-Dim-Sum-Labs-top.svg",
+        "github": "leviathanch"
       }
     ]
   },
   "Meteor-React": {
     "title": "Modern Frontend Stack: Meteor + React",
     "level": "Medium",
-    "start": "",
-    "end": "",
-    "location": "",
+    "start": "15:30",
+    "end": "16:15",
+    "location": "LT 16",
     "language": "English",
     "tags": ["Frontend", "Meteor", "React"],
-    "introduction": "",
+    "introduction": "<p>As mentioned above, I have been using Meteor and React for a couple months and by far have no intension changing either of my using pattern in the near future - simply because both of them are just too amazing to give up. In the short talk, if allowed, I plan to first talk about React/ES6 syntax briefly for about 10 minutes, including the advantages of using ReactJS over plain HTML or Blaze, and the last 10 minutes would be a short demonstration of using Meteor for the backend and React for the frontend to develop an simple to-do app with real-time database powered by MongoDB, just to let people get a taste of what Meteor and React are capable of doing - fast development.<p> Apologies in advanced that I did not know the submission deadline of SITCON is approaching (only saw the website a couple days ago), thus did not have time to complete my slides. However, the topics I would like to cover are more or less of this link (React vs. Blaze - The Meteor Chef), which is the main source of where I started learning the interaction between the two framework (Meteor and React).",
     "speakers": [
       {
         "name": "Kai-Chun Hsu",
-        "image": "",
-        "community": "HKU",
-        "communityLogo": "",
-        "github": ""
+        "image": "https://avatars3.githubusercontent.com/u/14267989?v=3&s=466",
+        "community": "Projectable",
+        "communityLogo": "https://cdn.sitconhk.pro/2016/images/speaker/projectable.png",
+        "github": "WigoHunter",
+        "introduce": "<p>Hi, I am Kevin! I was born and raised in Taiwan, came to Hong Kong for University as a business student, but ended up self-teaching to be a web developer. I have worked on some web development cases for startups in Hong Kong and an internship position in which I co-worked in more web development cases for more scaled startups and enterprises in Taiwan. After I went through trial and errors using plain HTML and CSS, jQuery, frameworks like Bootstrap and to ReactJS, AngularJS as well as those NodeJS-MongoDB stuffs, I think it’s safe to say React and Meteor stack is currently my go-to choice when developing a scalable project.</p><p>In addition to the fever of technologies, I am also working on initiatives with a common aim to develop projects that can add values onto traditional University lives. For example, Projectable is approaching to a launching stage. The idea behind this project is to build a network tailor-made for university students to find partners, co-workers and inspirations for projects they have been dreaming to do. Also, in HKU, I am also part of a study group in web development techniques, in which we in turns discuss about modern web technics including React, Meteor and a handful of CSS tricks as well as developing websites for clients.</p><p>Finally, I am also proud of being a traveller. I had, for at least 2 months each, traveled to and lived in Budapest, New York and Toronto for volunteering, internship and academic exchange. I love all these cities and the different living styles I had, but after all these travels and stays, Taiwan is still my one and only loved hometown.<p>"
       }
     ]
   },
   "IoT": {
     "title": "IoT made easy: using Raspberry Pi and Sensortags",
     "level": "Medium",
-    "start": "",
-    "end": "",
-    "location": "",
+    "start": "12:15",
+    "end": "13:00",
+    "location": "LT 17",
     "language": "English",
     "tags": ["IoT", "Raspberry Pi"],
     "introduction": "This talk will talk about how Raspberry Pi 3 can connect to a TI sensortags via bluetooth by Node.js. And how to stream real time data to the browser using Websocket. In addition, building a QR reader using a webcam and Raspberry Pi.",
     "speakers": [
       {
         "name": "Jeremy Yen",
-        "image": "",
-        "community": "HITCON",
-        "communityLogo": "",
-        "github": "jeremy5189"
+        "image": "https://avatars0.githubusercontent.com/u/1984426?v=3&s=400",
+        "community": "SITCON - TW",
+        "communityLogo": "https://cdn.sitconhk.pro/2016/images/support/sitcon.png",
+        "github": "jeremy5189",
+        "introduce": "Web developer. Love to code, make and travel. A active member of SITCON.tw since 2013. Five years of coding experience. Hate dirty code since last year while started working at two tech company in Taipei. Currently working at KPMG Taiwan IT advisory as a inter. Learn more about me at <a href=\"https://patricks.tw\">patricks.tw</a>"
       }
     ]
   },
@@ -165,16 +168,17 @@
     "start": "10:15",
     "end": "11:00",
     "location": "LT 16",
-    "language": "English",
+    "language": "Cantonese (English slide)",
     "tags": ["BaaS", "Keynote"],
-    "introduction": "Building a full feature app isn't easy - it involves front-end UI and backend architecture.  how to Skygear (http://skygear.io) - an open source BaaS to build mobile apps. We will do a live demo on how to build a chat app without writing a line of backend code.",
+    "introduction": "Building a full feature app isn't easy - it involves front-end UI and backend architecture.  how to Skygear (http://skygear.io) - an open source BaaS to build mobile apps. We will do a live demo on how to build a chat app without writing a line of backend code. David will show you how to develop a cloud-based real-time chat app in Swift without writing backend code. It is highly recommended that you bring your own laptop for this meetup.",
     "speakers": [
       {
         "name": "David Ng",
-        "image": "",
+        "image": "https://cdn.sitconhk.pro/2016/images/speaker/david.ng.jpg",
         "community": "OurSky",
-        "communityLogo": "",
-        "github": "david90"
+        "communityLogo": "https://cdn.sitconhk.pro/2016/images/sponsor/oursky.png",
+        "github": "david90",
+        "introduce": "David is a product manager for Skygear.io, an open source backend for mobile apps and web apps, where he spearheads growth-related operations such as paid ads across multiple channels, drip campaigns, influencer marketing and content marketing. When he's not working, he loves to hike and camp."
       }
     ]
   },

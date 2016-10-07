@@ -41,28 +41,6 @@ strong, .bold-text {
   font-weight: 700 !important;
 }
 
-.card {
-  > .card-image > img {
-    width: auto;
-    height: 300px;
-    margin: 0 auto;
-  }
-
-  > .card-content {
-    > p {
-      padding: 10px 0;
-    }
-    ul > li {
-      list-style-type: disc;
-      list-style-position: inside;
-    }
-
-    a {
-      color: $secondary-color;
-    }
-  }
-}
-
 .text-strong {
   font-size: 2em;
 }
